@@ -80,12 +80,12 @@ export const projects = [
     code: '#',
   },
   {
-    title: 'Movie Search App',
+    title: 'Portfolio-Website',
     description:
-      'A movie discovery app powered by the OMDb API with instant search and detailed result cards.',
+      'A personal portfolio built with React.js to highlight my projects, technical expertise, and experience.',
     tech: ['React', 'OMDb API'],
     tags: ['React', 'API'],
-    demo: '#',
+    demo: 'https://portfolio-drab-psi-33.vercel.app/',
     code: '#',
   },
 ];
