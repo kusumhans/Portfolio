@@ -6,10 +6,10 @@ export const roles = [
 ];
 
 export const stats = [
-  { label: 'Projects Completed', value: 12, suffix: '+' },
-  { label: 'Technologies Learned', value: 15, suffix: '+' },
-  { label: 'Internship Experience', value: 6, suffix: ' mo' },
-  { label: 'Certifications', value: 5, suffix: '+' },
+  { label: 'Projects Completed', value: 6, suffix: '+' },
+  { label: 'Technologies Learned', value: 12, suffix: '+' },
+  { label: 'Internship Experience', value: 2, suffix: ' mo' },
+  { label: 'Certifications', value: 1, suffix: '+' },
 ];
 
 export const skills = {
@@ -102,7 +102,7 @@ export const services = [
 export const testimonials = [
   {
     name: 'Ananya Sharma',
-    role: 'Product Manager, GrowUpCraft',
+    role: 'GrowUpCraft',
     quote:
       'Kusum translated our brief into a polished site faster than we expected, and kept communication clear at every step.',
   },

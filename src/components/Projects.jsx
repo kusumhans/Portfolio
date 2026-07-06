@@ -3,6 +3,12 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import SectionHeading from './SectionHeading';
 import Reveal from './Reveal';
 import { projects } from '../data/content';
+import shopcart from '../../public/shopcart.png'
+import growupcraft from '../../public/growupcraft.png'
+import holichildren from '../../public/holichildren.png'
+import todo from '../../public/todo.png'
+import weather from '../../public/weather.png'
+import portfolio from '../../public/portfolio.png'
 
 export default function Projects() {
   const allTags = useMemo(
@@ -13,6 +19,8 @@ export default function Projects() {
 
   const filtered =
     filter === 'All' ? projects : projects.filter((p) => p.tags.includes(filter));
+
+  const images = [shopcart, growupcraft, holichildren, todo, weather, portfolio]
 
   return (
     <section id="projects" className="section-pad relative">
@@ -46,19 +54,10 @@ export default function Projects() {
               <article className="group h-full overflow-hidden rounded-2xl glass transition-transform hover:-translate-y-2 hover:shadow-glow">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
-                    src={`https://images.unsplash.com/photo-${
-                      [
-                        '1556742049-0cfed4f6a45d',
-                        '1551288049-bebda4e38f71',
-                        '1503676260728-1c00da094a0b',
-                        '1551434678-e076c223a692',
-                        '1504384308090-c894fdcc538d',
-                        '1542831371-29b0f74f9713',
-                      ][i % 6]
-                    }?q=80&w=800&auto=format&fit=crop`}
+                    src={images[i % 6]}
                     alt={`${project.title} screenshot`}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="h-full w-full  object-fill transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
