@@ -61,13 +61,14 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="mx-auto grid w-full max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <div className="mx-auto flex min-h-[80vh] w-full max-w-4xl items-center justify-center px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
+          className="flex flex-col items-center text-center"
         >
-          <p className="font-mono-ui text-sm uppercase tracking-[0.2em] text-accent-purple">
+          <p className="mt-6 max-w-2xl text-base text-ink/70 dark:text-white/70 sm:text-lg">
             Hello, I'm
           </p>
           <h1 className="mt-3 text-5xl font-bold font-mono leading-[1.05] sm:text-6xl lg:text-7xl">
@@ -121,7 +122,7 @@ export default function Hero() {
             ))}
           </div>
         </motion.div>
-
+{/* 
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -145,7 +146,7 @@ export default function Hero() {
             <p className="font-mono-ui text-xs text-ink/60 dark:text-white/60">Stack</p>
             <p className="font-display text-sm font-semibold">React · Tailwind</p>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <motion.button

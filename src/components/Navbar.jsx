@@ -4,7 +4,7 @@ import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
 import { useTheme } from '../context/ThemeContext';
 
 const links = [
-  { id: 'home', label: 'Home' },
+  {   id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
@@ -52,13 +52,26 @@ export default function Navbar() {
         }`}
       >
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 sm:px-8">
-          <button
-            onClick={() => scrollTo('home')}
-            className="font-serif text-xl font-bold tracking-tight"
-            data-cursor-hover
-          >
-            <span className="text-gradient">.</span>
-          </button>
+        <button
+  onClick={() => scrollTo("home")}
+  data-cursor-hover
+  className="flex items-center gap-3"
+>
+  <img  
+    src='/public/logo.png'
+    alt="Kusum Logo"
+    className="h-10 w-10 rounded-full object-cover"
+  />
+
+  <div className="hidden sm:block text-left">
+    <h2 className="font-display text-lg font-bold">
+      Kusum
+    </h2>
+    <p className="text-xs text-gray-500 dark:text-gray-400">
+      Frontend Developer
+    </p>
+  </div>
+</button>
 
           <ul className="hidden items-center gap-1 lg:flex">
             {links.map((l) => (
