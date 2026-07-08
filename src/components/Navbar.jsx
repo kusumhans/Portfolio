@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
 import { useTheme } from '../context/ThemeContext';
+import logo from './../../public/logo.png'
 
 const links = [
   {   id: 'home', label: 'Home' },
@@ -58,7 +59,7 @@ export default function Navbar() {
   className="flex items-center gap-3"
 >
   <img  
-    src='/public/logo.png'
+    src={logo}
     alt="Kusum Logo"
     className="h-10 w-10 rounded-full object-cover"
   />
